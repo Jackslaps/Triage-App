@@ -23,7 +23,10 @@ class Scanner extends Component {
   render() {
     const { result } = this.state;
     if(result != null) {
-      return <Redirect to={{pathname:'/assistance', state: { stateName: result} }}/>
+      console.log("State: ", result)
+      return (
+        <Redirect to={{ pathname:'/assistance', state: { stateName: result } }}/>
+      )
     }
 
     return (

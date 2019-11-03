@@ -12,6 +12,15 @@ class Assistance extends Component {
         console.log("Props: ", this.state.props)
         return(
             <div>
+                <h1>Do you need assistance?</h1>
+                <br />
+                <button className="btn btl-light btn-block">
+                    Yes
+                </button>
+                <br/>
+                <button className="btn btl-light btn-block">
+                    No
+                </button>
                 <p>{this.state.props}</p>
             </div>
         )
