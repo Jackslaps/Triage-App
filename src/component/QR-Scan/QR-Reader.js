@@ -31,6 +31,7 @@ class Scanner extends Component {
 
     return (
       <div className="card grid-1 all-center">
+        <p>SCAN YOUR QR CODE TO CHECK IN</p>
         <QrReader
           delay={300}
           onError={this.handleError}
